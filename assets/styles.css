@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: #343434;
+  background-position: 20% 0%;
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+.content {
+  padding: 10vh 10vw;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1000;
+}
+
+.about-me {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 1.7em;
+  font-weight: bolder;
+  flex: 1 1 auto;
+  color: #343434;
+  animation: fadein 1s;
+}
+
+.bio {
+  flex: 1 1 auto;
+  animation: fadein 4s;
+  letter-spacing: -1px;
+  max-width: 66%;
+  font-size: 1em;
+}
+.bio p {
+  margin-bottom: 28px;
+}
+.bio a {
+  color: #4f3fbf;
+  text-decoration: underline;
+  transition: 1s;
+}
+.bio a:hover {
+  color: #9f2f9f;
+  transition: 0.1s;
+}
+
+.network {
+  animation: fadein 3s;
+  margin-top: auto;
+  flex: 1 1 auto;
+  text-decoration: none;
+}
+
+.network ul li {
+  display: inline-block;
+  margin-right: 14px;
+}
+
+.network a {
+  color: #343434;
+  text-decoration: none;
+}
+
+.credit {
+  animation: fadein 5s;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 0;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
