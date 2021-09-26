@@ -14,8 +14,6 @@ body {
   line-height: 60px;
   letter-spacing: -0.5px;
   color: #343434;
-  background-position: 20% 0%;
-  background-size: cover;
 }
 
 ul {
@@ -89,11 +87,45 @@ ul {
   opacity: 0.9;
 }
 
+/* Fade in Effect */
 @keyframes fadein {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .logo {
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    padding: 5vh 5vw;
+    text-align: center;
+  }
+  .logo {
+    align-self: center;
+    font-size: 1.2em;
+    flex: 1;
+  }
+  .bio {
+    max-width: none;
+    flex: 3;
+    align-self: center;
+  }
+  .credit {
+    flex: 1;
+  }
+  .content .about-me {
+    height: 90vh;
   }
 }
