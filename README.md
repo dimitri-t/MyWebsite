@@ -1,3 +1,3 @@
 # MyWebsite
 
-Simple website I created for myself
+Simple portfolio website I created for myself using HTML and CSS
